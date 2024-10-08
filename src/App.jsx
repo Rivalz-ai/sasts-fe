@@ -6,6 +6,8 @@ import {BreadCrumb} from "./utils/index.js";
 import HeaderPage from "./components/HeaderPage.jsx";
 import ClientContainer from "./components/Client/ClientContainer.jsx";
 import CountryRunning from "./components/CountRunnning/CountryRunning.jsx";
+import TotalClient from "./components/TotalClient.jsx";
+import TotalDataSpace from "./components/TotalDataSpace.jsx";
 
 function App() {
     return (
@@ -15,6 +17,8 @@ function App() {
                 <HeaderPage title="RIVALZ NETWORK DATA" breadCrumb={BreadCrumb} />
                 <ClientContainer />
                 <CountryRunning />
+                <TotalClient />
+                <TotalDataSpace />
             </AppWrapper>
             <Footer/>
         </Background>
