@@ -8,6 +8,8 @@ const ChartHeader = ({ title }) => {
             justifyContent={"space-between"}
             w={"full"}
             py={5}
+            flexDirection={{ base: 'column', lg: 'row' }}
+            gap={{ base: 5, lg: 0 }}
         >
             <Flex>
                 <RowTitle
@@ -17,7 +19,7 @@ const ChartHeader = ({ title }) => {
             </Flex>
             <Flex
                 gap={2}
-                pr={5}
+                pr={{ base: 0, lg: 5 }}
             >
                 <ButtonCustom title={"DAY"} selected={true} />
                 <ButtonCustom title={"WEEK"} />

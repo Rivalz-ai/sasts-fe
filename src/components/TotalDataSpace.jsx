@@ -5,10 +5,12 @@ import Container from "./Container.jsx";
 
 const TotalDataSpace = () => {
     return (
-        <Container p={'unset'}>
+        <Container px={{base: 20, lg: 'unset'}}>
             <Flex
                 bg={{ base: 'none', lg: '#071009' }}
                 border={{ base: 'none', lg: BORDER_STYLE }}
+                borderLeft={'none'}
+                flexDirection={'column'}
             >
                 <ChartHeader title={'TOTAL DATA SPACE'} />
             </Flex>

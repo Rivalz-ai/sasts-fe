@@ -188,6 +188,20 @@ body {
   background: #69FF93;
 }
 
-/*::-webkit-scrollbar-thumb:hover {*/
-/*  background: none;*/
-/*}*/
+#chartjs-tooltip {
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.tooltip-chart-box {
+  background: #071009;
+  padding: 10px;
+  border: 3px solid #265C35;
+  border-radius: 10px;
+}
+.tooltip-date-label {
+  color: #69FF93;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+}
