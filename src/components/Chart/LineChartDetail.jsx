@@ -58,8 +58,7 @@ const LineChartDetail = () => {
                                     tooltipEl.innerHTML = `
                                         <div class="tooltip-chart-box">
                                             <div class="tooltip-date-label">${titleLines[0]}</div>
-                                            <div style="color: white; font-size: 12px;">Total CLIENTS</div>
-                                            <div style="color: #00FF00; font-size: 16px; font-weight: bold;">${bodyLines[0]}</div>
+                                            <div class="client-text">Total CLIENTS: ${bodyLines[0]}</div>
                                         </div>
                                     `;
                                 }
