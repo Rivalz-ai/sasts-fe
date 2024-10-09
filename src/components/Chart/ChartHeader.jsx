@@ -1,8 +1,11 @@
 import {Flex} from "@chakra-ui/react";
 import RowTitle from "../RowTitle.jsx";
 import ButtonCustom from "../ButtonCustom.jsx";
+import useConnection from "../../utils/zustand.config.js";
 
 const ChartHeader = ({ title }) => {
+    const {setChartType, chartType} = useConnection();
+
     return (
         <Flex
             justifyContent={"space-between"}
@@ -21,9 +24,21 @@ const ChartHeader = ({ title }) => {
                 gap={2}
                 pr={{ base: 0, lg: 5 }}
             >
-                <ButtonCustom title={"DAY"} selected={true} />
-                <ButtonCustom title={"WEEK"} />
-                <ButtonCustom title={"MONTH"} />
+                <ButtonCustom
+                    title={"DAY"}
+                    selected={chartType === "DAY"}
+                    onClick={() => setChartType("DAY")}
+                />
+                <ButtonCustom
+                    title={"WEEK"}
+                    selected={chartType === "WEEK"}
+                    onClick={() => setChartType("WEEK")}
+                />
+                <ButtonCustom
+                    title={"MONTH"}
+                    selected={chartType === "MONTH"}
+                    onClick={() => setChartType("MONTH")}
+                />
             </Flex>
         </Flex>
     )

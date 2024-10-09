@@ -4,7 +4,7 @@ import ChartHeader from "./Chart/ChartHeader.jsx";
 import Container from "./Container.jsx";
 import LineChartDetail from "./Chart/LineChartDetail.jsx";
 
-const TotalDataSpace = () => {
+const TotalDataSpace = ({data, labels}) => {
     return (
         <Container px={{base: 20, lg: 'unset'}}>
             <Flex
@@ -14,7 +14,7 @@ const TotalDataSpace = () => {
                 flexDirection={'column'}
             >
                 <ChartHeader title={'TOTAL DATA SPACE'} />
-                <LineChartDetail />
+                <LineChartDetail data={data} labels={labels} />
             </Flex>
         </Container>
     )

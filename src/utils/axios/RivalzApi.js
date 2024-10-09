@@ -8,6 +8,10 @@ const RivalzApi = {
     getSystemInfo: async () => {
         const url = "/api-v1/orbit-db/system-info";
         return axiosClient.get(url);
+    },
+    getChartData: async (type) => {
+        const url = `/api-v1/system/get-sasts-chart-info?type=${type}`;
+        return axiosClient.get(url);
     }
 };
 

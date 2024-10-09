@@ -1,6 +1,6 @@
 import {Button} from "@chakra-ui/react";
 
-const ButtonCustom = ({title, selected}) => {
+const ButtonCustom = ({title, selected, ...props}) => {
     return (
         <Button
             borderColor='#49B267'
@@ -10,6 +10,7 @@ const ButtonCustom = ({title, selected}) => {
             fontSize="14px"
             fontWeight={'semibold'}
             bg={selected ? '#69FF93' : 'unset'}
+            {...props}
         >
             {title}
         </Button>

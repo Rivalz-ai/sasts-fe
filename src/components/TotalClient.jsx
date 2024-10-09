@@ -4,7 +4,7 @@ import {BORDER_STYLE} from "../themes/index.js";
 import ChartHeader from "./Chart/ChartHeader.jsx";
 import LineChartDetail from "./Chart/LineChartDetail.jsx";
 
-const TotalClient = () => {
+const TotalClient = ({data, labels}) => {
     return (
         <Container px={{base: 20, lg: 'unset'}}>
             <Flex
@@ -15,7 +15,7 @@ const TotalClient = () => {
                 gap={4}
             >
                 <ChartHeader title={'TOTAL rCLIENTS'} />
-                <LineChartDetail />
+                <LineChartDetail data={data} labels={labels}/>
             </Flex>
         </Container>
     )
