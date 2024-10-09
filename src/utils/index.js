@@ -9,11 +9,10 @@ const BreadCrumb = [
     { icon: HomeIcon, name: 'Home', href: `${RIVALZ_LANDING_PAGE_URL}` },
 ];
 
-
 export {
     DISCORD_URL,
     TELEGRAM_URL,
     X_URL,
     RIVALZ_LANDING_PAGE_URL,
-    BreadCrumb
+    BreadCrumb,
 }

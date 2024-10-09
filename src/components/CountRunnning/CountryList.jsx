@@ -1,8 +1,31 @@
 import {Flex} from "@chakra-ui/react";
 import {Text14Px400} from "../Text/index.jsx";
 import CountryDetail from "./CountryDetail.jsx";
+import {useEffect, useState} from "react";
+import {getName} from "country-list";
 
-const CountryList = () => {
+const CountryList = ({data}) => {
+    const [processedData, setProcessedData] = useState([]);
+
+    useEffect(() => {
+        if (!data) return;
+        const countryData = [];
+        const sortedData = Object.entries(data)
+            .sort(([, valueA], [, valueB]) => valueB - valueA)
+            .reduce((acc, [key, value]) => {
+                acc[key] = value;
+                return acc;
+            }, {});
+        for (const key in sortedData) {
+            countryData.push({
+                id: key,
+                country: getName(key),
+                connection: sortedData[key]
+            })
+        }
+        setProcessedData(countryData);
+    }, [data]);
+
     return (
         <Flex
             flexDirection="column"
@@ -33,15 +56,13 @@ const CountryList = () => {
                 flexDirection="column"
                 overflowY="auto"
             >
-                <CountryDetail name={"China"} number={"0000000"}/>
-                <CountryDetail name={"China"} number={"0000000"}/>
-                <CountryDetail name={"China"} number={"0000000"}/>
-                <CountryDetail name={"China"} number={"0000000"}/>
-                <CountryDetail name={"China"} number={"0000000"}/>
-                <CountryDetail name={"China"} number={"0000000"}/>
-                <CountryDetail name={"China"} number={"0000000"}/>
-                <CountryDetail name={"China"} number={"0000000"}/>
-                <CountryDetail name={"China"} number={"0000000"}/>
+                {processedData.map((country) => (
+                    <CountryDetail
+                        key={country.id}
+                        name={country.country}
+                        number={country.connection.toLocaleString()}
+                    />
+                ))}
             </Flex>
         </Flex>
     );

@@ -21,7 +21,7 @@ const ClientCard = ({title, value}) => {
                 {title}
             </Text14Px400>
             <Text900
-                fontSize="18px"
+                fontSize="15px"
                 color="#F6F4FA"
                 lineHeight="18px"
                 letterSpacing="unset"

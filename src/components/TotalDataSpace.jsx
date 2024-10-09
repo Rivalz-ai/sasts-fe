@@ -2,6 +2,7 @@ import {Flex} from "@chakra-ui/react";
 import {BORDER_STYLE} from "../themes/index.js";
 import ChartHeader from "./Chart/ChartHeader.jsx";
 import Container from "./Container.jsx";
+import LineChartDetail from "./Chart/LineChartDetail.jsx";
 
 const TotalDataSpace = () => {
     return (
@@ -13,6 +14,7 @@ const TotalDataSpace = () => {
                 flexDirection={'column'}
             >
                 <ChartHeader title={'TOTAL DATA SPACE'} />
+                <LineChartDetail />
             </Flex>
         </Container>
     )

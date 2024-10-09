@@ -4,7 +4,7 @@ import CountryRunningMap from "./CountryRunningMap.jsx";
 import CountryList from "./CountryList.jsx";
 import {BORDER_STYLE} from "../../themes/index.js";
 
-const CountryRunning = () => {
+const CountryRunning = ({data}) => {
     return (
         <Container
             p={{ base: 5, lg: 0 }}
@@ -15,7 +15,7 @@ const CountryRunning = () => {
                 border={{ base: 'none', lg: BORDER_STYLE }}
             >
                 <CountryRunningMap />
-                <CountryList />
+                <CountryList data={data} />
             </Flex>
         </Container>
     )
