@@ -45,7 +45,7 @@ const CountryList = ({data}) => {
                     Country
                 </Text14Px400>
                 <Text14Px400
-                    color="#071009"
+                    color="#69FF93"
                     fontSize={{ base: '12px', lg: '14px' }}
                 >
                     Storage providers
