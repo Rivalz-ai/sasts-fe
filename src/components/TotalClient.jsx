@@ -6,7 +6,7 @@ import LineChartDetail from "./Chart/LineChartDetail.jsx";
 
 const TotalClient = ({data, labels}) => {
     return (
-        <Container px={{base: 20, lg: 'unset'}}>
+        <Container px={'unset'}>
             <Flex
                 bg={{ base: 'none', lg: '#071009' }}
                 border={{ base: 'none', lg: BORDER_STYLE }}
@@ -14,8 +14,8 @@ const TotalClient = ({data, labels}) => {
                 flexDirection={'column'}
                 gap={4}
             >
-                <ChartHeader title={'TOTAL rCLIENTS'} />
-                <LineChartDetail data={data} labels={labels}/>
+                <ChartHeader title={'TOTAL rCLIENTS'} px={{base: 20, lg: 0}}/>
+                <LineChartDetail data={data} labels={labels} px={{base: 5, lg: 0}}/>
             </Flex>
         </Container>
     )

@@ -181,22 +181,24 @@ body {
     pointer-events: none;
 }
 
+
 .tooltip-chart-box {
     background: #071009;
-    padding: 10px 50px 10px 10px;
+    padding: 10px 30px 10px 10px;
     border: 3px solid #265C35;
     border-radius: 10px;
     position: relative;
-    right: 100px;
+    right: 85px;
     top: -200px;
+    z-index: 99999;
 }
 
 .tooltip-chart-box::before {
     position: absolute;
     height: 120px;
     content: "";
-    width: 2px;
-    left: 50%;
+    width: 1px;
+    left: 80px;
     top: 68px;
     border-left: 2px dashed #337D48;
 }
@@ -204,8 +206,22 @@ body {
 .tooltip-chart-box::after {
     position: absolute;
     content: url("../assets/arrow-chart.svg");
-    left: 47%;
+    left: 75px;
     top: 52px;
+}
+
+@media (max-width: 425px) {
+    .tooltip-chart-box {
+        padding: 10px 30px 10px 10px;
+        top: -100px;
+    }
+
+    .tooltip-chart-box::before {
+        display: none;
+    }
+    .tooltip-chart-box::after {
+        display: none;
+    }
 }
 
 .tooltip-date-label {

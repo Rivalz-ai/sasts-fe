@@ -3,7 +3,7 @@ import RowTitle from "../RowTitle.jsx";
 import ButtonCustom from "../ButtonCustom.jsx";
 import useConnection from "../../utils/zustand.config.js";
 
-const ChartHeader = ({ title }) => {
+const ChartHeader = ({ title, ...props }) => {
     const {setChartType, chartType} = useConnection();
 
     return (
@@ -13,6 +13,7 @@ const ChartHeader = ({ title }) => {
             py={5}
             flexDirection={{ base: 'column', lg: 'row' }}
             gap={{ base: 5, lg: 0 }}
+            {...props}
         >
             <Flex>
                 <RowTitle

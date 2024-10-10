@@ -5,9 +5,9 @@ import {LineChartOptions} from "../../utils/index.js";
 
 ChartJS.register(...registerables);
 
-const LineChartDetail = ({data, labels}) => {
+const LineChartDetail = ({data, labels, ...props}) => {
     return (
-        <Flex h="400px">
+        <Flex h="400px" {...props} >
             <Line
                 options={LineChartOptions}
                 data={{
