@@ -1,6 +1,6 @@
 import { Flex, Image } from '@chakra-ui/react';
 import {Text14Px400} from "./Text/index.jsx";
-import ArrowRight from '../assets/arrow-right.svg';
+import ArrowRight from '/assets/arrow-right.svg';
 
 const BreadCrumb = ({ data }) => {
   const condition = data.length - 1;

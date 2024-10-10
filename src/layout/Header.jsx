@@ -2,7 +2,7 @@ import {Box, chakra, Flex, shouldForwardProp} from '@chakra-ui/react';
 import AppWrapper from '../components/AppWrapper';
 import Logo from '../components/Logo/index.jsx';
 import {isValidMotionProp, motion} from "framer-motion";
-import MenuImage from '../assets/menu.svg';
+import MenuImage from '/assets/menu.svg';
 import Socials from "../components/Socials.jsx";
 import Menu from "../components/Menu.jsx";
 import useConnection from "../utils/zustand.config.js";

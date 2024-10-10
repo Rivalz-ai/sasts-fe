@@ -1,4 +1,4 @@
-import HomeIcon from '../assets/home.svg';
+import HomeIcon from '/assets/home.svg';
 
 const DISCORD_URL = 'https://x.com/Rivalz_AI';
 const TELEGRAM_URL = 'https://discord.com/invite/rivalzai';

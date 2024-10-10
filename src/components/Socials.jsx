@@ -1,7 +1,7 @@
 import {Flex, Image, Stack} from '@chakra-ui/react';
-import XIcon from '../assets/x.svg';
-import DiscordIcon from '../assets/discord.svg';
-import TelegramIcon from '../assets/telegram.svg';
+import XIcon from '/assets/x.svg';
+import DiscordIcon from '/assets/discord.svg';
+import TelegramIcon from '/assets/telegram.svg';
 import {DISCORD_URL, TELEGRAM_URL, X_URL} from "../utils/index.js";
 import {BORDER_STYLE} from "../themes/index.js";
 

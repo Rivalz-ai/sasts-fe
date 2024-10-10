@@ -1,5 +1,5 @@
 import {Flex, Image} from "@chakra-ui/react";
-import MapImage from "../../assets/map.svg"
+import MapImage from "/assets/map.svg"
 
 const CountryRunningMap = () => {
     return (

@@ -1,7 +1,7 @@
 import { Flex } from '@chakra-ui/react';
 import {MAX_CONTENT_WIDTH} from "../themes/index.js";
-import BackgroundBodyMd from '../assets/body-mb.svg';
-import BackgroundBody from '../assets/body.svg';
+import BackgroundBodyMd from '/assets/body-mb.svg';
+import BackgroundBody from '/assets/body.svg';
 
 export default function Background({ children, ...props }) {
   return (

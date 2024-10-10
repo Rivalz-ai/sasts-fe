@@ -8,11 +8,11 @@ import {
 import { isValidMotionProp, motion } from 'framer-motion';
 import RowTitle from "./RowTitle.jsx";
 import {Text14Px400, Text900} from "./Text/index.jsx";
-import ShapeHoverImg from '../assets/shape-hover.svg';
-import ArrowRight from '../assets/arrowright.svg';
-import CloseIcon from '../assets/close.svg';
-import ArrowDown from '../assets/arrowdown.svg';
-import CardPng from '../assets/card-bg.png';
+import ShapeHoverImg from '/assets/shape-hover.svg';
+import ArrowRight from '/assets/arrowright.svg';
+import CloseIcon from '/assets/close.svg';
+import ArrowDown from '/assets/arrowdown.svg';
+import CardPng from '/assets/card-bg.png';
 import {BORDER_STYLE} from "../themes/index.js";
 import useConnection from "../utils/zustand.config.js";
 import {RIVALZ_LANDING_PAGE_URL} from "../utils/index.js";

@@ -1,7 +1,7 @@
 import {HStack, Image} from '@chakra-ui/react';
 import {Text14Px400} from "./Text/index.jsx";
-import LineImg from '../assets/line.svg';
-import ShapeSvg from '../assets/shape.svg';
+import LineImg from '/assets/line.svg';
+import ShapeSvg from '/assets/shape.svg';
 
 export default function RowTitle({
   title,

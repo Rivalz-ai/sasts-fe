@@ -3,7 +3,7 @@ import Container from '../components/Container';
 import { Flex, Image, Spacer, chakra } from '@chakra-ui/react';
 import { Text500 } from '../components/Text/index.jsx';
 import {BORDER_STYLE} from "../themes/index.js";
-import LogoFooter from '../assets/logo-footer.svg';
+import LogoFooter from '/assets/logo-footer.svg';
 import {DISCORD_URL, RIVALZ_LANDING_PAGE_URL, TELEGRAM_URL, X_URL} from "../utils/index.js";
 
 const footer_menu = [
