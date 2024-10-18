@@ -149,7 +149,7 @@ export default function Menu() {
                     lineHeight="22px"
                     fontSize="14px"
                   >
-                    Q2 - Q3 2024
+                    Q3 - Q4 2024
                   </Flex>
                   <Spacer />
                   <Image src={ArrowRight} alt="arrowright" />
