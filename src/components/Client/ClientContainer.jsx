@@ -60,7 +60,7 @@ const ClientContainer = ({data}) => {
                 <ClientCard title={"FLOPS AVAILABLE (YFLOPS)"} value={flopsAvailable} />
                 <ClientCard
                     title={"ALL VALIDATED rCLIENTS"}
-                    value={data.totalNode.toLocaleString()}
+                    value={(data.totalNode + data.totalNodeV2).toLocaleString()}
                 />
             </Flex>
         </Container>
